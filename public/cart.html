@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+<body class="bg-stone-100">
+
+<!-- -----------------------------Desktop navbar-------------------------- -->
+
+    <nav  class="hidden  md:block h-28 shadow-lg  p-4 bg-stone-50  sticky top-0 z-10 mb-5">
+        <div class="container mx-auto max-w-screen-2xl flex  justify-between items-center">
+           <div class="flex  items-center w-[55%]">
+       
+               <div class=" w-full">
+                   <ul class="flex items-center gap-x-1 ">
+                       <li lass="flex-auto">
+                           <a class="inline-block  py-2 lg:px-3 xl:px-4 ml-2 lg:ml-3 mt-2 rounded-md  hover:bg-stone-100 text-base text-center lg:text-lg" href="#">  
+                                      <svg class="w-16 h-6 lg:w-24 lg:h-6" viewBox="0 0 99 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8.74402 1.40941V5.42118H4.73226V1.40941H8.74402ZM10.6852 12.9788C10.8577 12.9788 10.944 13.0651 10.944 13.2376V17.7412C10.944 17.9137 10.8577 18 10.6852 18H9.6499C9.37383 18 9.17539 17.9914 9.05461 17.9741C8.96834 19.182 8.71814 20.2086 8.30402 21.0541C7.8899 21.9169 7.22559 22.7106 6.31108 23.4353C5.41383 24.16 4.15422 24.9192 2.53226 25.7129L0.746376 21.7271C1.95422 21.0024 2.79971 20.4157 3.28285 19.9671C3.76598 19.5184 4.05932 19.0784 4.16285 18.6471C4.28363 18.2157 4.34402 17.5169 4.34402 16.5506V7.49177H9.10637V12.4094C9.10637 12.582 9.14951 12.72 9.23579 12.8235C9.33932 12.9271 9.47736 12.9788 9.6499 12.9788H10.6852ZM19.3572 12.7459C19.3572 13.6949 19.1243 14.5749 18.6584 15.3859C18.1925 16.1796 17.5627 16.818 16.769 17.3012C15.9752 17.7671 15.0952 18 14.129 18H10.6866C10.5141 18 10.4278 17.9137 10.4278 17.7412V13.2376C10.4278 13.0651 10.5141 12.9788 10.6866 12.9788H14.0772C14.2152 12.9788 14.336 12.9271 14.4396 12.8235C14.5431 12.72 14.5948 12.5906 14.5948 12.4353V6.76706H19.3572V12.7459ZM19.409 20.0706V24.0824H11.3854V20.0706H19.409ZM26.0939 18C25.1276 18 24.2476 17.7671 23.4539 17.3012C22.6602 16.818 22.0304 16.1796 21.5645 15.3859C21.0986 14.5749 20.8657 13.6949 20.8657 12.7459V0.322355H25.628V12.4353C25.628 12.6078 25.6711 12.7459 25.7574 12.8494C25.8609 12.9357 25.9904 12.9788 26.1457 12.9788H27.7245C27.897 12.9788 27.9833 13.0651 27.9833 13.2376V17.7412C27.9833 17.9137 27.897 18 27.7245 18H26.0939ZM35.7977 0.684708V4.69647H27.7742V0.684708H35.7977ZM31.0354 6.76706H35.7977V12.7459C35.7977 13.6949 35.5648 14.5749 35.0989 15.3859C34.633 16.1796 34.0032 16.818 33.2095 17.3012C32.4158 17.7671 31.5358 18 30.5695 18H27.7225C27.5499 18 27.4636 17.9137 27.4636 17.7412V13.2376C27.4636 13.0651 27.5499 12.9788 27.7225 12.9788H30.5177C30.6558 12.9788 30.7766 12.9271 30.8801 12.8235C30.9836 12.72 31.0354 12.5906 31.0354 12.4353V6.76706Z" fill="#222F5D"/>
+                           <path d="M56.7374 12.9788C56.9099 12.9788 56.9962 13.0651 56.9962 13.2376V17.7412C56.9962 17.9137 56.9099 18 56.7374 18H56.0127C56.0472 18.3106 56.0644 18.5435 56.0644 18.6988C56.0644 19.7341 55.8056 20.6918 55.288 21.5718C54.7703 22.4518 54.0715 23.142 53.1915 23.6424C52.3115 24.16 51.3452 24.4188 50.2927 24.4188H44.1844C42.9076 24.4188 41.7256 24.0996 40.6386 23.4612C39.5515 22.8227 38.6888 21.96 38.0503 20.8729C37.4119 19.7859 37.0927 18.6039 37.0927 17.3271V10.4941H41.855V17.0682C41.855 17.7067 42.0793 18.2502 42.528 18.6988C42.9939 19.1647 43.546 19.3976 44.1844 19.3976H50.3703C50.5774 19.3976 50.7499 19.3286 50.888 19.1906C51.026 19.0525 51.095 18.8886 51.095 18.6988C51.095 18.509 51.026 18.3451 50.888 18.2071C50.7499 18.069 50.5774 18 50.3703 18H44.7021V12.9788H56.7374ZM56.739 18C56.5664 18 56.4802 17.9137 56.4802 17.7412V13.2376C56.4802 13.0651 56.5664 12.9788 56.739 12.9788H62.5366C63.71 12.9788 64.7108 12.6165 65.539 11.8918L67.5837 10.08L64.6072 8.63059C64.3657 8.52706 64.1759 8.47529 64.0378 8.47529C63.7272 8.47529 63.4166 8.61333 63.1061 8.88941L60.4143 11.8659L57.1013 8.96706L59.819 5.65412C60.3712 4.99843 61.0182 4.52392 61.7602 4.23059C62.5021 3.92 63.2441 3.76471 63.9861 3.76471C64.8488 3.76471 65.6684 3.97177 66.4449 4.38588L71.9837 6.97412C72.07 7.00863 72.139 7.02588 72.1908 7.02588C72.2598 7.02588 72.3115 7.02588 72.3461 7.02588H75.5296V11.6847H72.2166V12.4094C72.2166 12.582 72.2598 12.72 72.3461 12.8235C72.4496 12.9271 72.5876 12.9788 72.7602 12.9788H75.9955C76.168 12.9788 76.2543 13.0651 76.2543 13.2376V17.7412C76.2543 17.9137 76.168 18 75.9955 18H72.7602C71.7421 18 70.9053 17.7584 70.2496 17.2753C69.6111 16.7749 69.0849 16.0502 68.6708 15.1012L68.1531 15.6188C67.2904 16.3953 66.3155 16.9906 65.2284 17.4047C64.1413 17.8016 63.0284 18 61.8896 18H56.739ZM59.9484 20.0706H63.9602V24.0824H59.9484V20.0706ZM84.6697 12.7459C84.6697 13.6949 84.4367 14.5749 83.9709 15.3859C83.505 16.1796 82.8752 16.818 82.0815 17.3012C81.2877 17.7671 80.4077 18 79.4415 18H75.9991C75.8266 18 75.7403 17.9137 75.7403 17.7412V13.2376C75.7403 13.0651 75.8266 12.9788 75.9991 12.9788H79.3897C79.5277 12.9788 79.6485 12.9271 79.752 12.8235C79.8556 12.72 79.9073 12.5906 79.9073 12.4353V6.76706H84.6697V12.7459ZM84.7215 20.0706V24.0824H76.6979V20.0706H84.7215ZM93.037 12.9788C93.4856 12.9788 93.7099 12.7976 93.7099 12.4353C93.7099 12.2973 93.6581 12.1851 93.5546 12.0988C93.4511 11.9953 93.2095 11.8141 92.8299 11.5553L87.0064 7.54353L89.724 3.60941L96.324 8.19059C97.0315 8.74275 97.5664 9.32941 97.9287 9.95059C98.2911 10.5718 98.4723 11.3482 98.4723 12.28C98.4723 13.3671 98.2048 14.3506 97.6699 15.2306C97.1523 16.0933 96.4448 16.7749 95.5476 17.2753C94.6503 17.7584 93.6754 18 92.6228 18H86.1781V12.9788H93.037Z" fill="#FF755C"/>
+                           </svg>
+                         </a>
+                       </li>
+                       <li class="flex-auto" ><a class="inline-block  py-2 px-3 lg:px-5 rounded-md   hover:bg-stone-100 text-base xl:text-xl text-center lg:text-lg" href="#"> خانه </a></li>
+                       <li class="flex-auto" ><a class="inline-block  py-2 px-1 xl:px-4 rounded-md  hover:bg-stone-100 text-base xl:text-xl   text-center lg:text-lg" href="#"> تلفن همراه </a> </li>
+                       <li class="flex-auto" ><a class="inline-block  py-2 px-1 xl:px-4 rounded-md  hover:bg-stone-100 text-base xl:text-xl   text-center lg:text-lg" href="#"> لپ تاپ </a></li>
+                       <li class="flex-auto" ><a class="inline-block  py-2 px-1 xl:px-4 rounded-md  hover:bg-stone-100 text-base xl:text-xl   text-center lg:text-lg" href="#"> ساعت هوشمند </a> </li>
+                   </ul>
+               </div>
+           
+               </div>
+               <div class=" flex items-center bg-slate-100 rounded-lg w-[45%] lg:w-1/2 ">
+                   <div class="px-4 ">
+                       <svg  width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M13.4167 24.5002C19.5378 24.5002 24.5 19.538 24.5 13.4168C24.5 7.29567 19.5378 2.3335 13.4167 2.3335C7.29552 2.3335 2.33334 7.29567 2.33334 13.4168C2.33334 19.538 7.29552 24.5002 13.4167 24.5002Z" stroke="#222F5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M25.6667 25.6668L23.3333 23.3335" stroke="#222F5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                           
+                   </div>
+                   <input  class="w-full py-4 xl:max-w-screen-lg rounded-lg bg-stone-100 focus:outline-none" placeholder="     جستجوی نام محصول،نام برند،نام مدل و ..." type="text">
+               </div>
+       
+           </div>
+       </nav>
+       
+
+       
+    <!-- ----------------------------app - bar---------------------------- -->
+    <div class="flex md:hidden justify-between items-center mt-12 px-4 mb-6">
+        <div>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_217_2397)">
+                <rect x="8" y="6.25" width="31.5" height="31.5" rx="5" fill="#FDFDFD"/>
+                </g>
+                <path d="M20.8084 15.8902C20.8084 16.0248 20.8579 16.1593 20.9642 16.2656L25.5825 20.8839C25.9225 21.2239 25.9225 21.7764 25.5825 22.1164L20.9642 26.7348C20.7588 26.9402 20.7588 27.2802 20.9642 27.4856C21.1696 27.691 21.5096 27.691 21.715 27.4856L26.3334 22.8673C27.0842 22.1164 27.0842 20.891 26.3334 20.1331L21.715 15.5148C21.5096 15.3093 21.1696 15.3093 20.9642 15.5148C20.865 15.621 20.8084 15.7556 20.8084 15.8902Z" fill="#222F5D"/>
+                <defs>
+                <filter id="filter0_d_217_2397" x="0" y="0.25" width="47.5" height="47.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="2"/>
+                <feGaussianBlur stdDeviation="4"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_217_2397"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_217_2397" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+                
+                
+        </div>
+        <div class="font-bold text-lg text-slate-700 " >سبد خرید</div>
+         <div class="w-[30px] h-[30px] bg-stone-50 flex justify-center items-center rounded-[5px] shadow-md ">
+            
+                 <svg class="w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#222F5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#222F5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+         </div>
+    </div>
+       
+
+    <!-- -------------------------------Cart--------------------------------------- -->
+    <div  class=" flex flex-col px-4 md:grid md:grid-cols-12 md:gap-x-4 gap-y-4 grid-flow-row-dense container mx-auto max-w-screen-2xl ">
+    
+    
+    
+    <div x-data="{
+        products:[
+        {id:1 , title:'ساعت هوشمند سری 7',quantity:'1',price:'  تومان ۱۳,۵۰۰,۰۰۰'},
+        {id:2 , title:'ساعت هوشمند سری 6',quantity:'3',price:'  تومان ۱۱,۵۶۵,۰۰'},
+        {id:3 , title:'ساعت هوشمند سری 5',quantity:'1',price:'  تومان ۹,۸۶۷,۰۰'},
+        {id:4 , title:'ساعت هوشمند سری 4',quantity:'2',price:'  تومان ۵,۳۰۰,۰۰۰'},
+
+        ]
+    }"
+    
+    class="flex flex-col gap-y-4  md:col-span-8 lg:col-span-8 ">
+            <template x-for="product in products"  :key="product.id">
+            <div class="flex justify-between items-stretch shadow-lg bg-stone-50 rounded-lg px-2 py-3">
+    
+                <div class="w-20 md:w-24 flex items-center">
+                    <img class="w-full h-auto" src="../assets/images/apple-watch-7.png" alt="">
+                </div>
+            
+                <div class="flex flex-col  justify-between items-start s:px-3 sm:px-4 md:px-8  flex-1">
+                    <span x-text="product.title" class="text-slate-700 text-xs s:text-base md:text-xl   font-semibold"></span>
+                    <span x-text="product.price" class="text-orange-500 text-sm md:text-xl font-semibold"> </span>
+                </div>
+            
+                <div class="flex flex-col justify-end items-end gap-y-6">
+                    <!-- ------------------close icon--------------- -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:w-6 md:h-6 stroke-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                    </div>
+                    <div class="flex justify-end items-center gap-x-2 md:gap-x-4">
+                      
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 md:w-5 md:h-5  bg-gray-300 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                  </svg>
+                            </span>
+                    
+            
+                        <span x-text="product.quantity" class="border border-red-300 p-2 rounded-[4px]"> </span>
+            
+                   
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 md:w-5 md:h-5 stroke-orange-500 bg-red-200 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                  </svg>
+                            </span>
+                    </div>
+    
+                </div>
+            
+            </div>
+            
+        </template>
+    
+        </div>
+
+
+
+    
+        <!-- ---------------------------total price in cart------------------------------ -->
+    <div class="flex flex-col  items-stretch  md:items-start md:justify-start  rounded-lg mt-4 md:mt-0   flex-1  md:col-span-4 lg:col-span-4 "> 
+        
+<div class="bg-stone-50 shadow-lg  gap-y-2 p-4 w-full  rounded-lg ">
+    <div class=" flex justify-between font-semibold text-lg max-w-sm:flex-1 mb-5 w-full">
+        <span>مجموع قیمت :</span>
+        <span class="text-orange-500">قیمت تومان</span> 
+    </div>
+    <div class=" flex flex-col md:flex-row w-full max-w-sm:flex-1  md:justify-between md:items-center mb-5">
+        <div class="text-sm md:hidden">کد تخفیف دارید؟</div>
+        <span class="hidden md:block">کد تخفیف</span>
+        <div class="md:flex  items-center h-9 overflow-hidden rounded-lg hidden">
+            <input dir="ltr" placeholder="QZCX700"  class="border-none bg-gray-200 max-w-[100px] outline-none placeholder:opacity-30 h-full " type="text">
+            <button class=" bg-orange-500   px-3 text-white h-full">تایید</button>
+        </div>
+
+      
+    </div>
+    <div class="hidden md:flex justify-between  w-full font-semibold text-lg max-w-sm:flex-1 mb-11">
+        <span> تخفیف :</span>
+        <span class="text-orange-500">قیمت تومان</span> 
+    </div>
+    <div class="hidden md:flex justify-between w-full font-semibold text-lg max-w-sm:flex-1">
+        <span> قیمت نهایی :</span>
+        <span class="text-orange-500">قیمت تومان</span> 
+    </div>
+</div>
+
+        <div class="mt-5 w-full hidden md:block">
+            <button class="bg-orange-500 rounded-md text-white w-full py-2 mb-4">اضافه به سبد خرید</button>
+            <button class="text-orange-500 rounded-md border border-orange-500 w-full py-2 mb-4">انصراف از خرید</button>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    
+<!-- ----------------------------bottom navigation--------------------------------  -->
+<div class="fixed bottom-0 right-0 left-0  rounded-tr-md rounded-tl-md bg-stone-50 w-full  py-2  border-t-1 border-gray-400 md:hidden shadow-[0_-4px_8px_0_rgba(0,0,0,.1)]">
+    <nav x-data="{choice : 'home'}" class="w-full" >
+        <ul class="flex items-center justify-between h-16  text-gray-400 gap-x-3 ">
+            <li class="flex-auto " @click="choice = 'home'" :class="choice  === 'home' ? 'text-slate-800 ' : ''">
+                <a class=" py-4 w-full flex items-center justify-center" href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.72 9.09357L19.04 3.72024C16.9467 2.25358 13.7333 2.33358 11.72 3.89358L5.03999 9.10691C3.70665 10.1469 2.65332 12.2802 2.65332 13.9602V23.1602C2.65332 26.5602 5.41332 29.3336 8.81332 29.3336H23.1867C26.5867 29.3336 29.3467 26.5736 29.3467 23.1736V14.1336C29.3467 12.3336 28.1867 10.1202 26.72 9.09357ZM17 24.0002C17 24.5469 16.5467 25.0002 16 25.0002C15.4533 25.0002 15 24.5469 15 24.0002V20.0002C15 19.4536 15.4533 19.0002 16 19.0002C16.5467 19.0002 17 19.4536 17 20.0002V24.0002Z"/>
+                        </svg>
+                        <span x-show="choice === 'home'" class="font-bold mr-2 xs:text-sm sm:text-base text-slate-800">خانه</span>
+
+                </a>
+            </li>
+
+            <li class="flex-auto" @click="choice = 'categoreis'" :class="choice  === 'categoreis' ? 'text-slate-800 ' : ''">
+                <a class=" py-4 w-full flex items-center justify-center" href="#">
+                    <span>
+                        <svg  width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10.257 2.833H7.565c-3.102 0-4.732 1.63-4.732 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.692c3.088 0 4.717-1.629 4.717-4.717V7.55c.014-3.088-1.615-4.718-4.703-4.718ZM26.45 2.833h-2.692c-3.089 0-4.718 1.63-4.718 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.691c3.088 0 4.718-1.629 4.718-4.717V7.55c0-3.088-1.63-4.718-4.718-4.718ZM26.45 19.026h-2.692c-3.089 0-4.718 1.629-4.718 4.717v2.692c0 3.088 1.63 4.718 4.718 4.718h2.691c3.088 0 4.718-1.63 4.718-4.718v-2.692c0-3.088-1.63-4.717-4.718-4.717ZM10.257 19.026H7.565c-3.102 0-4.732 1.629-4.732 4.717v2.692c0 3.103 1.63 4.732 4.718 4.732h2.692c3.088 0 4.717-1.63 4.717-4.718v-2.692c.014-3.102-1.615-4.731-4.703-4.731Z" /></svg>
+                    </span>
+                    <span x-show="choice === 'categoreis'" class="font-bold mr-2 xs:text-sm sm:text-base ">دسته بندی</span>
+
+                    
+                </a>
+            </li>
+    
+            <li class="flex-auto" @click="choice = 'cart'" :class="choice  === 'cart' ? 'text-slate-800 ' : ''">
+                <a class=" py-4 w-full flex items-center justify-center" href="#">
+                    <span>
+                        <svg :class="choice === 'cart ? 'fill-slate-800': ''"  width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M28.277 12.693c-.95-1.048-2.38-1.657-4.364-1.87V9.747a6.9 6.9 0 0 0-2.266-5.114c-1.46-1.332-3.358-1.955-5.327-1.771-3.386.326-6.233 3.598-6.233 7.14v.821c-1.984.213-3.415.822-4.364 1.87-1.374 1.53-1.331 3.57-1.176 4.987l.992 7.89c.298 2.763 1.417 5.597 7.508 5.597h7.905c6.092 0 7.211-2.834 7.509-5.582l.992-7.92c.155-1.402.184-3.442-1.176-4.972ZM16.518 4.831c1.417-.128 2.763.312 3.811 1.26a4.925 4.925 0 0 1 1.615 3.656v.991h-9.888v-.736c0-2.522 2.082-4.944 4.462-5.171Zm-4.59 13.798h-.014a1.42 1.42 0 0 1-1.416-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.418 1.416Zm9.917 0h-.014a1.42 1.42 0 0 1-1.417-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.417 1.416Z" /></svg>
+                    </span>
+
+                    <span x-show="choice === 'cart'" class="font-bold mr-2 xs:text-sm sm:text-base">سبد خرید</span>
+                    
+                </a>
+            </li>
+      
+            <li class="flex-auto" @click="choice = 'favorite'" :class="choice  === 'favorite' ? 'text-slate-800 ' : ''" >
+                <a class=" py-4 w-full flex items-center justify-center" href="#">
+                    <span>
+                        <svg  width="29" height="25" viewBox="0 0 29 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8335 0.333496C18.3224 0.333496 16.0779 1.55572 14.6779 3.42239C13.2779 1.55572 11.0335 0.333496 8.52239 0.333496C4.27794 0.333496 0.833496 3.80016 0.833496 8.06683C0.833496 9.71127 1.10016 11.2446 1.54461 12.6446C3.72238 19.5557 10.4779 23.7113 13.8113 24.8446C14.2779 25.0002 15.0557 25.0002 15.5224 24.8446C18.8557 23.7113 25.6113 19.5779 27.7891 12.6446C28.2557 11.2224 28.5002 9.71127 28.5002 8.06683C28.5224 3.80016 25.0779 0.333496 20.8335 0.333496Z " />
+                            </svg>
+                            
+                    </span>
+                    <span x-show="choice === 'favorite'" class="font-bold mr-2 xs:text-sm sm:text-base">علاقه مندی</span>
+                    
+                   
+                </a>
+            </li>
+     
+
+        </ul>
+    </nav>
+
+</div>
+
+
+
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body>
+</html>

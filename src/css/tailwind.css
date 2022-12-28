@@ -1,0 +1,13 @@
+@import url("/src/css/fonts.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width:768px) {
+    span.design,span.display,span.battery{
+        display: block !important;
+    }
+}
+
+
+    
